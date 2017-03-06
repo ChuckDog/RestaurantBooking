@@ -1,0 +1,9 @@
+{
+  "name": "RestaurantBooking",
+  "version": "1.0.0",
+  "description": "this is a app",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "xuzhong",
+  "license": "ISC"
+}

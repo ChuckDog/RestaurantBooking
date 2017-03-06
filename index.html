@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurant Booking</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+
+	<div class="container">
+		<header>
+			<h1>Restaurant Booking</h1>
+		</header>
+
+		<table id="bookingTable" class="table">
+			<thead>
+
+				<tr>
+					<th>Customer Name</th>
+					<th>Table Number</th>
+					<th>Phone Number</th>
+					<th>Booking Time</th>
+				</tr>
+				
+				<tr>
+					<td><input class="form-control name_input"></td>
+					<td><input class="form-control table_input"></td>
+					<td><input class="form-control phone_input" type="number" name="quantity"></td>
+					<td><input class="form-control time_input"></td>
+					<td><button class="btn btn-primary add-booking">Booking</button></td>
+				</tr>
+
+			</thead>
+
+			<tbody id="bookingTableBody"></tbody>
+		</table>
+	</div>
+
+	<script type="text/template" class="bookingTableListTemplate">
+		<td><span class="name"><%= name %></span></td>
+		<td><span class="table"><%= table %></span></td>
+		<td><span class="phone"><%= phone %></span></td>
+		<td><span class="time"><%= time %></span></td>
+		<td><button class="btn btn-warning edit-booking">Edit Booking</button>  <button class="btn btn-danger delete-booking">Delete Booking</button>
+		<button class="btn btn-success update-booking">Update Booking</button>  <button class="btn btn-danger cancel-booking">Cancel Booking</button></td>
+	</script>
+
+	<script type="text/javascript" src="vender/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="vender/underscore.js"></script>
+	<script type="text/javascript" src="vender/backbone.js"></script>
+	<script type="text/javascript" src="vender/bootstrap.min.js"></script>
+	<script type="text/javascript" src="node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+	<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>
