@@ -116,6 +116,16 @@ var allBookingsView = Backbone.View.extend({
 
 var bookingsView = new allBookingsView();
 
+var startTrackingBookingList = function() {
+
+	setTimeout(function() {
+
+		var cacheData = window.localStorage.getItem('cacheBookings');
+		cacheData = JSON.parse(cacheData);
+		
+	}, 50000);
+}
+
 $(document).ready(function() {
 
 	bookingsView.render();
@@ -144,4 +154,6 @@ $(document).ready(function() {
 			alert("Please fill all infomation!");
 		}
 	});
+
+	// startTrackingBookingList();
 });
